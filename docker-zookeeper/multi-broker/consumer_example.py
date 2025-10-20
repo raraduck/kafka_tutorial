@@ -16,6 +16,17 @@ def json_deserializer(data):
     if data is None:
         return None
     return json.loads(data.decode('utf-8'))
+    # """바이트를 JSON 객체로 역직렬화하는 함수"""
+    # if data is None:
+    #     return None
+    # try:
+    #     text = data.decode('utf-8').strip()
+    #     if not text:
+    #         return None
+    #     return json.loads(text)
+    # except Exception as e:
+    #     print(f"[WARN] JSON 역직렬화 실패: {e}, data={data!r}")
+    #     return None
 
 def format_timestamp(timestamp_str):
     """ISO 형식 타임스탬프를 가독성 있는 형식으로 변환"""
@@ -186,4 +197,4 @@ def main():
     consumer.start(thread_count=args.threads)
 
 if __name__ == "__main__":
-    main() 
+    main()
