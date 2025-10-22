@@ -29,26 +29,9 @@ services:
     networks:
       - kafka-network
 
-  # 카프카 관리 UI 도구
-  kafka-ui:
-    image: provectuslabs/kafka-ui:latest
-    container_name: kafka-ui
-    depends_on:
-      - kafka
-      # - kafka2
-      # - kafka3
-    ports:
-      - "8088:8080"
-    environment:
-      KAFKA_CLUSTERS_0_NAME: kafka-cluster
-      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092 # kafka1:29092,kafka2:29093,kafka3:29094
-      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
-    networks:
-      - kafka-network
-
   # Spark 환경 
   spark-master:
-    image: bitnamilegacy/spark:3.4.1
+    image: bitnamilegacy/spark:3.4.1-debian-11-r87
     container_name: spark-master
     ports:
       - "8181:8080"
@@ -61,7 +44,7 @@ services:
       - kafka-network
 
   spark-worker:
-    image: bitnamilegacy/spark:3.4.1
+    image: bitnamilegacy/spark:3.4.1-debian-11-r87
     container_name: spark-worker
     depends_on:
       - spark-master

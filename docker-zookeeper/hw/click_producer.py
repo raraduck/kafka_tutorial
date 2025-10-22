@@ -27,7 +27,7 @@ def generate_click_event(fake: Faker, user_id: str | None = None) -> dict:
     """가상의 클릭 이벤트 데이터를 생성합니다. 특정 user_id를 지정할 수 있습니다."""
     event = {
         'user_id': user_id if user_id else fake.uuid4(), # 지정된 user_id 또는 랜덤 UUID
-        'page_url': fake.uri(),
+        'page_url': fake.uri(), # "https://google.com/", # fake.uri(),
         'click_time': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
         'referrer': fake.uri() if random.random() > 0.3 else None,
         'user_agent': fake.user_agent()

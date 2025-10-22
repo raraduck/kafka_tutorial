@@ -1,0 +1,3 @@
+Faker==37.11.0
+kafka-python==2.2.15
+tzdata==2025.2
