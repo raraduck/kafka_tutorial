@@ -26,15 +26,19 @@ spark = SparkSession.builder \
 
 spark.sparkContext.setLogLevel("WARN")
 
+print(":::: Hello!!!")
+
 # 3️⃣ Kafka에서 메시지 읽기 (배치모드)
 df_raw = spark.read \
     .format("kafka") \
     .option("kafka.bootstrap.servers", KAFKA_BROKERS) \
     .option("subscribe", TOPIC_NAME) \
+    .option("failOnDataLoss", "false") \
     .option("startingOffsets", "earliest") \
     .load()
 
 df_raw = df_raw.selectExpr("CAST(value AS STRING) as json_str")
+print("::::::Kafka raw count:", df_raw.count())
 
 # 4️⃣ JSON 스키마 정의
 schema = StructType([
@@ -51,9 +55,13 @@ df_parsed = df_raw \
     .select("data.*") \
     .withColumnRenamed("timestamp", "event_time")
 
-# 6️⃣ 콘솔 출력
-print("📦 Kafka 메시지 출력:")
+print("About to show parsed df")
 df_parsed.show(truncate=False)
+print("After show")
+
+# # 6️⃣ 콘솔 출력
+# print("📦 Kafka 메시지 출력:")
+# df_parsed.show(truncate=False)
 
 # 6️⃣ PostgreSQL에 저장 (테이블 매번 덮어쓰기)
 df_parsed.write \

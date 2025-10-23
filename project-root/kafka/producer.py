@@ -35,9 +35,6 @@ def on_send_error(excp):
     """메시지 전송 실패 시 호출되는 콜백 함수"""
     print(f"메시지 전송 실패: {excp}")
 
-        # 'kafka1:29092',  # broker 1
-        # 'kafka2:29093',  # broker 2
-        # 'kafka3:29094'   # broker 3
 def main():
     # Kafka 브로커 목록 (다중 브로커)
     bootstrap_servers = [
@@ -45,6 +42,16 @@ def main():
         'localhost:9093',  # broker 2
         'localhost:9094'   # broker 3
     ]
+    # bootstrap_servers = [
+    #     'kafka1:29092',  # broker 1
+    #     'kafka2:29093',  # broker 2
+    #     'kafka3:29094'   # broker 3
+    # ]
+    # bootstrap_servers = [
+    #     '0.0.0.0:9092',  # broker 1
+    #     '0.0.0.0:9093',  # broker 2
+    #     '0.0.0.0:9094'   # broker 3
+    # ]
     # Kafka Producer 생성
     producer = KafkaProducer(
         bootstrap_servers=bootstrap_servers,  # Kafka 브로커 주소

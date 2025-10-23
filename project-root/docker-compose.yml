@@ -40,8 +40,10 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+    # volumes:
+    #   - kafka1-data:/var/lib/kafka/data
     volumes:
-      - kafka1-data:/var/lib/kafka/data
+      - ./kafka:/opt/kafka-apps
     healthcheck:
       test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9092", "--list"]
       interval: 30s
@@ -73,8 +75,10 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+    # volumes:
+    #   - kafka2-data:/var/lib/kafka/data
     volumes:
-      - kafka2-data:/var/lib/kafka/data
+      - ./kafka:/opt/kafka-apps
     healthcheck:
       test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9093", "--list"]
       interval: 30s
@@ -107,8 +111,10 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+    # volumes:
+    #   - kafka3-data:/var/lib/kafka/data
     volumes:
-      - kafka3-data:/var/lib/kafka/data
+      - ./kafka:/opt/kafka-apps
     healthcheck:
       test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9094", "--list"]
       interval: 30s
@@ -149,6 +155,7 @@ services:
       - "7077:7077"
     environment:
       - SPARK_MODE=master
+      - SPARK_MASTER_HOST=spark-master   # 중요!
     depends_on:
       - kafka-ui
     volumes:
@@ -221,6 +228,7 @@ services:
       - "8080:8080"
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./spark/jobs:/opt/spark-apps
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -249,6 +257,7 @@ services:
       - airflow-webserver
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./spark/jobs:/opt/spark-apps
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -268,6 +277,7 @@ services:
       - airflow-webserver
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./spark/jobs:/opt/spark-apps
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -288,6 +298,6 @@ networks:
 
 volumes:
   postgres_data: 
-  kafka1-data:
-  kafka2-data:
-  kafka3-data: 
+  # kafka1-data:
+  # kafka2-data:
+  # kafka3-data: 
