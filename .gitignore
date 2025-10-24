@@ -2,3 +2,7 @@ __pycache__
 venv
 # project-root
 .DS_Store
+config
+logs
+tmp
+plugins
