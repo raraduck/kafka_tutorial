@@ -1,0 +1,61 @@
+# 일반적인 패키지
+pandas==2.1.0
+numpy==1.25.2
+python-dotenv==1.0.0
+requests==2.31.0
+schedule==1.2.0
+
+# 데이터 시각화 및 대시보드
+dash==2.13.0
+plotly==5.16.1
+dash-bootstrap-components==1.5.0
+
+# Kafka 관련
+kafka-python==2.0.2
+
+# 데이터베이스 관련
+psycopg2-binary==2.9.7
+
+# 주식 데이터 관련
+yfinance==0.2.54
+
+# 감성 분석 관련
+nltk==3.8.1
+
+# 소셜 미디어 데이터 수집
+praw==7.7.1
+
+# 로깅 및 유틸리티
+python-json-logger==2.0.7
+
+# 주식 데이터 분석
+pandas-ta==0.3.14b0  # 기술적 지표 계산
+
+# 감성 분석 관련
+textblob==0.17.1
+vaderSentiment==3.3.2
+spark-nlp==5.1.4
+
+# 스파크 관련
+pyspark==3.4.1
+findspark==2.0.1
+py4j==0.10.9.7
+delta-spark==2.4.0
+
+# 알림 관련
+slackclient==2.9.4  # Slack API 클라이언트
+
+# 워크플로우 관리 (선택사항)
+apache-airflow==2.6.3
+apache-airflow-providers-apache-spark==4.1.0
+
+# 개발 및 테스트
+pytest==7.3.1
+pytest-mock==3.10.0
+pytest-cov==4.1.0
+black==23.3.0
+isort==5.12.0
+flake8==6.0.0
+
+# 유틸리티
+twilio==8.0.0  # SMS 알림 (선택사항) 
