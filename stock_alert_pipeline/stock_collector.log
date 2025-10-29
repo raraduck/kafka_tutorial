@@ -1,0 +1,813 @@
+2025-10-25 15:55:17,523 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 15:55:17,530 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-25 15:55:17,533 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 15:55:17,544 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-25 15:55:17,652 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 15:55:17,670 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 15:55:17,688 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 15:55:17,694 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 15:55:21,813 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 15:55:21,815 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 15:55:21,854 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 15:55:23,930 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 15:55:23,948 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 15:55:23,968 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 15:55:25,975 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 15:55:25,977 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 15:55:25,990 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 15:55:27,733 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 15:55:27,762 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 15:55:27,800 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 15:55:29,980 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 15:55:29,981 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 15:55:29,991 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 15:55:31,906 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 15:55:31,915 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 15:55:31,972 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 15:55:35,164 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 15:55:35,168 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 15:55:35,198 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 15:55:35,199 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 16:00:17,801 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-25 16:00:17,808 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-25 16:00:17,810 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-25 16:00:38,647 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:00:38,649 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:00:38,687 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:00:40,668 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:00:40,669 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:00:40,673 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:00:42,379 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:00:42,380 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:00:42,387 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:00:44,114 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:00:44,114 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:00:44,118 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:00:45,781 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:00:45,782 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:00:45,786 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:00:48,230 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:00:48,231 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:00:48,241 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:00:49,943 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:00:49,943 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:00:49,946 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:00:49,946 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 16:05:52,698 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:05:52,699 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:05:52,710 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:05:54,210 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:05:54,211 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:05:54,214 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:05:55,708 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:05:55,709 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:05:55,714 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:05:57,359 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:05:57,360 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:05:57,371 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:05:58,783 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:05:58,784 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:05:58,787 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:06:00,706 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:06:00,707 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:06:00,716 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:06:02,442 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:06:02,444 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:06:02,456 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:06:02,456 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 16:11:05,228 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:11:05,230 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:11:05,239 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:11:06,790 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:11:06,791 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:11:06,797 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:11:08,913 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:11:08,914 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:11:08,925 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:11:10,336 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:11:10,337 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:11:10,345 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:11:12,094 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:11:12,095 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:11:12,098 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:11:13,683 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:11:13,684 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:11:13,692 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:11:15,633 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:11:15,634 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:11:15,639 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:11:15,640 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 16:12:03,699 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 16:12:03,701 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-25 16:12:03,702 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 16:12:03,703 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-25 16:12:03,819 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 16:12:03,819 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 16:12:03,822 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 16:12:03,822 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 16:12:06,516 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:12:06,517 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:12:06,525 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:12:08,044 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:12:08,044 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:12:08,051 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:12:09,886 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:12:09,887 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:12:09,890 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:12:13,208 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:12:13,209 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:12:13,215 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:12:15,286 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:12:15,286 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:12:15,290 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:12:17,378 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:12:17,379 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:12:17,410 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:12:19,261 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:12:19,262 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:12:19,264 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:12:19,265 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 16:19:11,544 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 16:19:11,562 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.10', 29092)]>: connecting to kafka:29092 [('172.21.0.10', 29092) IPv4]
+2025-10-25 16:19:11,565 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 16:19:11,578 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.10', 29092)]>: Connection complete.
+2025-10-25 16:19:11,718 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 16:19:11,722 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 16:19:11,738 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 16:19:11,739 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 16:19:19,788 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 -0.03%
+2025-10-25 16:19:19,803 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.10', 29092)]>: connecting to kafka:29092 [('172.21.0.10', 29092) IPv4]
+2025-10-25 16:19:19,845 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.10', 29092)]>: Connection complete.
+2025-10-25 16:19:19,847 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.21.0.10', 29092)]>: Closing connection. 
+2025-10-25 16:19:26,018 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 0.00%
+2025-10-25 16:19:32,309 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.03%
+2025-10-25 16:19:39,134 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 0.01%
+2025-10-25 16:19:44,850 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 -0.07%
+2025-10-25 16:19:51,107 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 0.00%
+2025-10-25 16:19:57,882 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 -0.20%
+2025-10-25 16:19:57,962 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 16:51:46,700 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 16:51:46,709 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-25 16:51:46,714 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 16:51:46,716 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-25 16:51:46,820 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 16:51:46,821 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 16:51:46,825 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 16:51:46,827 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 16:51:50,172 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:51:50,172 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:51:55,191 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:51:56,872 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:51:56,873 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:52:01,889 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:52:03,555 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:52:03,556 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:52:08,570 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:52:09,978 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:52:09,979 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:52:14,996 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:52:16,546 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:52:16,548 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:52:21,567 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:52:23,075 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:52:23,078 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:52:28,097 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:52:30,038 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:52:30,039 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:52:35,055 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:52:35,059 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 16:57:44,538 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 16:57:44,548 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: connecting to kafka:29092 [('172.21.0.8', 29092) IPv4]
+2025-10-25 16:57:44,552 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 16:57:44,555 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: Connection complete.
+2025-10-25 16:57:44,672 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 16:57:44,676 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 16:57:44,683 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 16:57:44,684 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 16:57:48,205 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:57:48,207 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:57:58,226 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:57:59,864 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:57:59,865 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 16:58:09,887 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 16:58:11,794 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 16:58:11,795 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:00:07,556 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 17:00:07,558 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: connecting to kafka:29092 [('172.21.0.8', 29092) IPv4]
+2025-10-25 17:00:07,558 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 17:00:07,559 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: Connection complete.
+2025-10-25 17:00:07,666 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 17:00:07,667 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 17:00:07,668 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 17:00:07,669 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:00:10,484 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:00:10,485 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:00:20,492 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:00:22,002 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:00:22,004 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:00:32,034 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:00:33,779 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:00:33,779 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:00:43,790 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:00:45,521 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:00:45,523 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:00:55,538 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:00:57,242 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:00:57,244 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:01:07,270 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:01:09,020 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:01:09,022 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:01:19,046 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:01:21,235 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:01:21,237 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:01:31,268 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:01:31,271 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 17:03:13,859 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 17:03:13,862 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: connecting to kafka:29092 [('172.21.0.8', 29092) IPv4]
+2025-10-25 17:03:13,863 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 17:03:13,865 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: Connection complete.
+2025-10-25 17:03:13,971 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 17:03:13,971 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 17:03:13,973 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 17:03:13,974 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:03:17,348 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:03:17,349 - yfinance - ERROR - ['AAPL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:03:27,373 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:03:28,794 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:03:28,795 - yfinance - ERROR - ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:03:38,811 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:03:40,861 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:03:40,864 - yfinance - ERROR - ['GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:03:50,890 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:03:52,640 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:03:52,641 - yfinance - ERROR - ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:04:02,659 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:04:04,719 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:04:04,721 - yfinance - ERROR - ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:04:14,744 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:04:16,177 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:04:16,180 - yfinance - ERROR - ['005930.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:04:26,207 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:04:28,192 - yfinance - ERROR - 
+1 Failed download:
+2025-10-25 17:04:28,193 - yfinance - ERROR - ['000660.KS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:04:38,216 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-25 17:04:38,219 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 17:09:40,152 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 17:09:40,155 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: connecting to kafka:29092 [('172.21.0.8', 29092) IPv4]
+2025-10-25 17:09:40,156 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 17:09:40,157 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: Connection complete.
+2025-10-25 17:09:40,270 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 17:09:40,271 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 17:09:40,273 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 17:09:40,274 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:09:40,280 - yfinance - INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/root/.cache/py-yfinance' reason: [Errno 17] File exists: '/root/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-25 17:09:43,525 - yfinance - ERROR - 
+7 Failed downloads:
+2025-10-25 17:09:43,525 - yfinance - ERROR - ['MSFT', '005930.KS', 'AMZN', 'AAPL', 'GOOGL', '000660.KS', 'TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:10:17,108 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:10:17,131 - stock_collector - WARNING - 종목 AAPL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:10:17,132 - stock_collector - WARNING - 종목 MSFT에 대한 데이터가 비어 있습니다.
+2025-10-25 17:10:17,132 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:10:17,133 - stock_collector - WARNING - 종목 AMZN에 대한 데이터가 비어 있습니다.
+2025-10-25 17:10:17,134 - stock_collector - WARNING - 종목 TSLA에 대한 데이터가 비어 있습니다.
+2025-10-25 17:10:17,135 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:10:17,135 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:10:17,136 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 17:14:40,351 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: connecting to kafka:29092 [('172.21.0.8', 29092) IPv4]
+2025-10-25 17:14:40,356 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.8', 29092)]>: Connection complete.
+2025-10-25 17:14:40,357 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.21.0.8', 29092)]>: Closing connection. 
+2025-10-25 17:15:20,545 - yfinance - ERROR - 
+7 Failed downloads:
+2025-10-25 17:15:20,546 - yfinance - ERROR - ['000660.KS', 'GOOGL', '005930.KS', 'AAPL', 'MSFT', 'AMZN', 'TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:15:55,319 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:15:55,349 - stock_collector - WARNING - 종목 AAPL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:15:55,351 - stock_collector - WARNING - 종목 MSFT에 대한 데이터가 비어 있습니다.
+2025-10-25 17:15:55,352 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:15:55,353 - stock_collector - WARNING - 종목 AMZN에 대한 데이터가 비어 있습니다.
+2025-10-25 17:15:55,354 - stock_collector - WARNING - 종목 TSLA에 대한 데이터가 비어 있습니다.
+2025-10-25 17:15:55,355 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:15:55,356 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:15:55,357 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 17:42:50,191 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 17:42:50,210 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.10', 29092)]>: connecting to kafka:29092 [('172.25.0.10', 29092) IPv4]
+2025-10-25 17:42:50,217 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 17:42:50,219 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.25.0.10', 29092)]>: Connection complete.
+2025-10-25 17:42:50,341 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 17:42:50,342 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 17:42:50,354 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 17:42:50,356 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:42:50,366 - yfinance - INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/root/.cache/py-yfinance' reason: [Errno 17] File exists: '/root/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-25 17:42:50,367 - yfinance - INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/root/.cache/py-yfinance' reason: [Errno 17] File exists: '/root/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-25 17:42:50,367 - yfinance - INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/root/.cache/py-yfinance' reason: [Errno 17] File exists: '/root/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-25 17:42:57,974 - yfinance - ERROR - 
+7 Failed downloads:
+2025-10-25 17:42:58,051 - yfinance - ERROR - ['005930.KS', 'AMZN', '000660.KS', 'AAPL', 'TSLA', 'MSFT', 'GOOGL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:43:32,453 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:43:32,865 - stock_collector - WARNING - 종목 AAPL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:43:32,869 - stock_collector - WARNING - 종목 MSFT에 대한 데이터가 비어 있습니다.
+2025-10-25 17:43:32,872 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:43:32,873 - stock_collector - WARNING - 종목 AMZN에 대한 데이터가 비어 있습니다.
+2025-10-25 17:43:32,874 - stock_collector - WARNING - 종목 TSLA에 대한 데이터가 비어 있습니다.
+2025-10-25 17:43:32,875 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:43:32,875 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:43:32,878 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 17:47:25,367 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 17:47:25,373 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.27.0.10', 29092)]>: connecting to kafka:29092 [('172.27.0.10', 29092) IPv4]
+2025-10-25 17:47:25,375 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 17:47:25,379 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.27.0.10', 29092)]>: Connection complete.
+2025-10-25 17:47:25,483 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 17:47:25,484 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 17:47:25,488 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 17:47:25,489 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:47:28,953 - yfinance - ERROR - 
+7 Failed downloads:
+2025-10-25 17:47:28,953 - yfinance - ERROR - ['AAPL', '000660.KS', 'MSFT', 'TSLA', 'GOOGL', '005930.KS', 'AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:48:16,708 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:48:16,732 - stock_collector - WARNING - 종목 AAPL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:48:16,733 - stock_collector - WARNING - 종목 MSFT에 대한 데이터가 비어 있습니다.
+2025-10-25 17:48:16,734 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:48:16,734 - stock_collector - WARNING - 종목 AMZN에 대한 데이터가 비어 있습니다.
+2025-10-25 17:48:16,735 - stock_collector - WARNING - 종목 TSLA에 대한 데이터가 비어 있습니다.
+2025-10-25 17:48:16,736 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:48:16,737 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:48:16,737 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-25 17:49:11,298 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-25 17:49:11,301 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.27.0.10', 29092)]>: connecting to kafka:29092 [('172.27.0.10', 29092) IPv4]
+2025-10-25 17:49:11,303 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-25 17:49:11,304 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.27.0.10', 29092)]>: Connection complete.
+2025-10-25 17:49:11,420 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-25 17:49:11,421 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-25 17:49:11,423 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-25 17:49:11,423 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:50:12,304 - yfinance - ERROR - 
+7 Failed downloads:
+2025-10-25 17:50:12,305 - yfinance - ERROR - ['GOOGL', '005930.KS', 'AAPL', '000660.KS', 'MSFT', 'TSLA', 'AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-10-25 17:50:12,311 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-25 17:50:12,312 - stock_collector - WARNING - 종목 AAPL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:50:12,313 - stock_collector - WARNING - 종목 MSFT에 대한 데이터가 비어 있습니다.
+2025-10-25 17:50:12,314 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터가 비어 있습니다.
+2025-10-25 17:50:12,315 - stock_collector - WARNING - 종목 AMZN에 대한 데이터가 비어 있습니다.
+2025-10-25 17:50:12,315 - stock_collector - WARNING - 종목 TSLA에 대한 데이터가 비어 있습니다.
+2025-10-25 17:50:12,316 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:50:12,317 - stock_collector - WARNING - 종목 000660.KS에 대한 데이터가 비어 있습니다.
+2025-10-25 17:50:12,317 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 07:02:52,966 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-26 07:02:52,988 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: connecting to kafka:29092 [('172.29.0.10', 29092) IPv4]
+2025-10-26 07:02:52,992 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-26 07:02:52,995 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: Connection complete.
+2025-10-26 07:02:53,111 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-26 07:02:53,116 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-26 07:02:53,123 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-26 07:02:53,125 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-26 07:03:40,425 - yfinance - ERROR - Failed to get ticker 'AAPL' reason: 'str' object has no attribute 'name'
+2025-10-26 07:03:40,556 - yfinance - ERROR - 
+1 Failed download:
+2025-10-26 07:03:40,558 - yfinance - ERROR - ['AAPL']: AttributeError("'str' object has no attribute 'name'")
+2025-10-26 07:03:40,758 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-26 07:04:28,143 - yfinance - ERROR - Failed to get ticker 'MSFT' reason: 'str' object has no attribute 'name'
+2025-10-26 07:04:28,224 - yfinance - ERROR - 
+1 Failed download:
+2025-10-26 07:04:28,225 - yfinance - ERROR - ['MSFT']: AttributeError("'str' object has no attribute 'name'")
+2025-10-26 07:04:28,698 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-26 07:05:07,247 - yfinance - ERROR - Failed to get ticker 'GOOGL' reason: 'str' object has no attribute 'name'
+2025-10-26 07:05:07,359 - yfinance - ERROR - 
+1 Failed download:
+2025-10-26 07:05:07,362 - yfinance - ERROR - ['GOOGL']: AttributeError("'str' object has no attribute 'name'")
+2025-10-26 07:05:07,495 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-26 07:08:38,368 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-26 07:08:38,468 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: connecting to kafka:29092 [('172.29.0.10', 29092) IPv4]
+2025-10-26 07:08:38,656 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-26 07:08:38,663 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: Connection complete.
+2025-10-26 07:08:39,236 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-26 07:08:39,240 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-26 07:08:39,282 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-26 07:08:39,284 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-26 07:09:19,590 - yfinance - ERROR - Failed to get ticker 'AAPL' reason: 'str' object has no attribute 'name'
+2025-10-26 07:09:19,929 - yfinance - ERROR - $AAPL: possibly delisted; no price data found  (period=1d)
+2025-10-26 07:09:19,934 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-26 07:10:07,788 - yfinance - ERROR - Failed to get ticker 'MSFT' reason: 'str' object has no attribute 'name'
+2025-10-26 07:10:07,875 - yfinance - ERROR - $MSFT: possibly delisted; no price data found  (period=1d)
+2025-10-26 07:10:07,878 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-26 07:10:41,793 - yfinance - ERROR - Failed to get ticker 'GOOGL' reason: 'str' object has no attribute 'name'
+2025-10-26 07:10:41,801 - yfinance - ERROR - $GOOGL: possibly delisted; no price data found  (period=1d)
+2025-10-26 07:10:41,803 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-26 07:12:21,132 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-26 07:12:21,138 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: connecting to kafka:29092 [('172.29.0.10', 29092) IPv4]
+2025-10-26 07:12:21,139 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-26 07:12:21,141 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: Connection complete.
+2025-10-26 07:12:21,251 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-26 07:12:21,252 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-26 07:12:21,254 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-26 07:12:21,254 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-26 07:12:21,255 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:13:01,943 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:13:47,914 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:14:19,827 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:15:04,598 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:15:39,379 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:16:21,557 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:17:00,303 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 07:17:21,315 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: connecting to kafka:29092 [('172.29.0.10', 29092) IPv4]
+2025-10-26 07:17:21,318 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.29.0.10', 29092)]>: Connection complete.
+2025-10-26 07:17:21,318 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.29.0.10', 29092)]>: Closing connection. 
+2025-10-26 07:22:00,414 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:22:56,726 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:23:34,207 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:24:07,202 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:24:40,833 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:25:23,689 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:26:12,030 - stock_collector - INFO - 디버깅중...
+2025-10-26 07:26:58,064 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 07:34:55,739 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-26 07:34:55,767 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: connecting to kafka:29092 [('172.30.0.10', 29092) IPv4]
+2025-10-26 07:34:55,775 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-26 07:34:55,781 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: Connection complete.
+2025-10-26 07:34:55,924 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-26 07:34:55,929 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-26 07:34:55,946 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-26 07:34:55,949 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-26 07:35:36,268 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: connecting to kafka:29092 [('172.30.0.10', 29092) IPv4]
+2025-10-26 07:35:36,278 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: Connection complete.
+2025-10-26 07:35:36,279 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.30.0.10', 29092)]>: Closing connection. 
+2025-10-26 07:35:36,422 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 -0.03%
+2025-10-26 07:36:13,496 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 0.00%
+2025-10-26 07:37:09,412 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.03%
+2025-10-26 07:38:03,397 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 0.01%
+2025-10-26 07:39:00,406 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 -0.07%
+2025-10-26 07:39:37,822 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 0.00%
+2025-10-26 07:40:20,427 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 -0.20%
+2025-10-26 07:40:20,435 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 07:46:21,177 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 -0.03%
+2025-10-26 07:47:18,369 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 0.00%
+2025-10-26 07:48:07,415 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.03%
+2025-10-26 07:48:46,108 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 0.01%
+2025-10-26 07:49:33,849 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 -0.07%
+2025-10-26 07:50:29,876 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 0.00%
+2025-10-26 07:51:27,309 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 -0.20%
+2025-10-26 07:51:27,310 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 07:57:20,089 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 -0.03%
+2025-10-26 07:58:06,518 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 0.00%
+2025-10-26 07:59:04,099 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.03%
+2025-10-26 07:59:14,649 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-26 07:59:14,654 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: connecting to kafka:29092 [('172.30.0.10', 29092) IPv4]
+2025-10-26 07:59:14,655 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-26 07:59:14,656 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: Connection complete.
+2025-10-26 07:59:14,772 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-26 07:59:14,773 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-26 07:59:14,776 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-26 07:59:14,776 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-26 07:59:53,787 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 -0.03%
+2025-10-26 07:59:53,789 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: connecting to kafka:29092 [('172.30.0.10', 29092) IPv4]
+2025-10-26 07:59:53,790 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: Connection complete.
+2025-10-26 07:59:53,790 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.30.0.10', 29092)]>: Closing connection. 
+2025-10-26 08:00:49,103 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 0.00%
+2025-10-26 08:01:44,387 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.03%
+2025-10-26 08:02:17,644 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 0.01%
+2025-10-26 08:02:53,032 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 -0.07%
+2025-10-26 08:03:51,722 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 0.00%
+2025-10-26 08:04:33,070 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 -0.20%
+2025-10-26 08:04:33,073 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 08:10:14,041 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 -0.03%
+2025-10-26 08:11:03,663 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 0.00%
+2025-10-26 08:11:43,647 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.03%
+2025-10-26 08:12:38,126 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 0.01%
+2025-10-26 08:13:32,216 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 -0.07%
+2025-10-26 08:14:08,194 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 0.00%
+2025-10-26 08:14:54,321 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 -0.20%
+2025-10-26 08:14:54,322 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 08:20:29,215 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 -0.03%
+2025-10-26 08:20:54,043 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-26 08:20:54,049 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: connecting to kafka:29092 [('172.30.0.10', 29092) IPv4]
+2025-10-26 08:20:54,050 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-26 08:20:54,051 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: Connection complete.
+2025-10-26 08:20:54,161 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-26 08:20:54,162 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-26 08:20:54,164 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-26 08:20:54,164 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-26 08:21:34,563 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 08:21:34,566 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: connecting to kafka:29092 [('172.30.0.10', 29092) IPv4]
+2025-10-26 08:21:34,567 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.30.0.10', 29092)]>: Connection complete.
+2025-10-26 08:21:34,567 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.30.0.10', 29092)]>: Closing connection. 
+2025-10-26 08:22:28,233 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 08:23:20,655 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 08:23:58,486 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 08:24:51,112 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 08:25:35,670 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 08:26:10,837 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 08:26:10,839 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 08:31:48,525 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 08:32:28,211 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 08:33:01,026 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 08:33:32,650 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 08:34:28,215 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 08:35:25,165 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 08:36:11,625 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 08:36:11,627 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 08:41:46,778 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 08:42:36,725 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 08:43:15,827 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 08:44:05,124 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 08:44:45,367 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 08:45:31,983 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 08:46:22,489 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 08:46:22,492 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 08:52:16,665 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 08:53:10,758 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 08:53:43,502 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 08:54:32,195 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 08:55:24,380 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 08:56:08,223 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 08:57:02,414 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 08:57:02,416 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 09:02:43,958 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 09:03:23,487 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 09:03:57,787 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 09:04:50,750 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 09:05:47,542 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 09:06:26,317 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 09:07:02,258 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 09:07:02,261 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 09:12:41,657 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 09:13:21,935 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 09:13:54,313 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 09:14:48,353 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 09:15:23,081 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 09:16:21,228 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 09:16:52,881 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 09:16:52,883 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 09:22:25,412 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 09:23:12,943 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 09:24:12,450 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 09:24:48,769 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 09:25:21,590 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 09:25:54,172 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 09:26:29,439 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 09:26:29,441 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 09:32:29,656 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 09:33:13,580 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 09:34:08,863 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 09:34:49,955 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 09:35:25,439 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 09:36:04,308 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 09:36:54,766 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 09:36:54,768 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 09:42:40,662 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 09:43:25,517 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 09:44:17,450 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 09:45:09,977 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 09:45:57,091 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 09:46:46,323 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 09:47:26,523 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 09:47:26,525 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-26 09:53:21,236 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 262.74, 변동률 0.04%
+2025-10-26 09:54:18,530 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 523.50, 변동률 -0.17%
+2025-10-26 09:55:10,286 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 259.91, 변동률 -0.02%
+2025-10-26 09:56:02,029 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 224.26, 변동률 -0.01%
+2025-10-26 09:56:54,170 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 433.59, 변동률 0.44%
+2025-10-26 09:57:29,990 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 98800.00, 변동률 -0.10%
+2025-10-26 09:58:19,538 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 509000.00, 변동률 0.00%
+2025-10-26 09:58:19,541 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 07:38:53,579 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-28 07:38:53,589 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 07:38:53,591 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 07:38:53,594 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 07:38:53,708 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 07:38:53,709 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 07:38:53,713 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 07:38:53,715 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-28 07:39:45,998 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 07:39:46,000 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 07:39:46,001 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 07:39:46,002 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 07:40:21,324 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 07:41:07,577 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 07:41:54,099 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 07:42:51,195 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 07:43:28,143 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 07:44:28,592 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 07:44:28,593 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 07:50:12,689 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 07:51:04,474 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 07:51:35,116 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 07:52:23,123 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 07:53:16,881 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 07:54:00,525 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 07:54:45,643 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 07:54:45,652 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 08:00:18,758 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 08:01:12,336 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 08:01:50,987 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 08:02:34,066 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 08:03:26,639 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 08:04:25,342 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 08:05:11,165 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 08:05:11,168 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 08:10:49,172 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 08:11:48,334 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 08:12:29,932 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 08:13:26,367 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 08:14:06,099 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 08:15:04,202 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 08:15:54,093 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 08:15:54,094 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 08:21:30,995 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 08:22:26,594 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 08:23:10,777 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 08:24:05,986 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 08:24:52,927 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 08:25:28,628 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 08:26:04,071 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 08:26:04,073 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 08:31:49,864 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 08:32:36,237 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 08:33:24,886 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 08:34:21,388 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 08:35:06,978 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 08:36:04,641 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 08:36:53,658 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 08:36:53,660 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 08:42:33,764 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 08:43:06,390 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 08:44:02,496 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 08:44:58,190 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 08:53:19,211 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-28 08:53:19,258 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 08:53:19,274 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 08:53:19,285 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Connection complete.
+2025-10-28 08:53:19,393 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 08:53:19,394 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 08:53:19,421 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 08:53:19,422 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-28 08:54:12,127 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 08:54:12,172 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Connection complete.
+2025-10-28 08:54:12,177 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. 
+2025-10-28 08:54:12,470 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 08:55:14,176 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 08:56:23,959 - yfinance - ERROR - Failed to get ticker 'GOOGL' reason: Failed to perform, curl: (28) Connection timed out after 10000 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-28 08:56:53,067 - yfinance - ERROR - 
+1 Failed download:
+2025-10-28 08:56:53,069 - yfinance - ERROR - ['GOOGL']: ConnectionError('Failed to perform, curl: (7) Failed to connect to query2.finance.yahoo.com port 443 after 29020 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-28 08:56:53,224 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-28 08:57:37,789 - yfinance - ERROR - Failed to get ticker 'AMZN' reason: Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-28 08:57:55,280 - yfinance - ERROR - 
+1 Failed download:
+2025-10-28 08:57:55,284 - yfinance - ERROR - ['AMZN']: ConnectionError('Failed to perform, curl: (7) Failed to connect to query2.finance.yahoo.com port 443 after 17470 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-28 08:57:55,326 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-28 08:58:38,462 - yfinance - ERROR - Failed to get ticker 'TSLA' reason: Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-28 08:58:48,499 - yfinance - ERROR - 
+1 Failed download:
+2025-10-28 08:58:48,502 - yfinance - ERROR - ['TSLA']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-28 08:58:48,521 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-28 08:59:56,843 - yfinance - ERROR - Failed to get ticker '005930.KS' reason: Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-28 09:00:04,554 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. KafkaConnectionError: Socket EVENT_READ without in-flight-requests
+2025-10-28 09:00:04,569 - kafka.client - WARNING - Node 1 connection failed -- refreshing metadata
+2025-10-28 09:00:04,696 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 09:00:04,699 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]> returned error 111. Disconnecting.
+2025-10-28 09:00:04,701 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:00:04,702 - kafka.client - WARNING - Node 1 connection failed -- refreshing metadata
+2025-10-28 09:00:04,860 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 09:00:04,862 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]> returned error 111. Disconnecting.
+2025-10-28 09:00:04,862 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:00:04,863 - kafka.client - WARNING - Node 1 connection failed -- refreshing metadata
+2025-10-28 09:00:05,177 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 09:00:05,182 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]> returned error 111. Disconnecting.
+2025-10-28 09:00:05,185 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:00:05,187 - kafka.client - WARNING - Node 1 connection failed -- refreshing metadata
+2025-10-28 09:00:05,663 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 09:00:05,704 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]> returned error 111. Disconnecting.
+2025-10-28 09:00:05,736 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:00:05,824 - kafka.client - WARNING - Node 1 connection failed -- refreshing metadata
+2025-10-28 09:00:06,510 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 09:00:06,514 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]> returned error 111. Disconnecting.
+2025-10-28 09:00:06,514 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:00:06,515 - kafka.client - WARNING - Node 1 connection failed -- refreshing metadata
+2025-10-28 09:00:06,889 - yfinance - ERROR - 
+1 Failed download:
+2025-10-28 09:00:06,890 - yfinance - ERROR - ['005930.KS']: Timeout('Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-28 09:00:06,986 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-28 09:00:07,657 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: connecting to kafka:29092 [('192.168.0.10', 29092) IPv4]
+2025-10-28 09:00:07,661 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]> returned error 111. Disconnecting.
+2025-10-28 09:00:07,662 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('192.168.0.10', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:00:07,664 - kafka.client - WARNING - Node 1 connection failed -- refreshing metadata
+2025-10-28 09:00:08,669 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:08,674 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:09,551 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:09,552 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:10,479 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:10,481 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:11,404 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:11,406 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:12,335 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:12,336 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:13,254 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:13,254 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:33,246 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-28 09:00:33,252 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:33,253 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:33,253 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 09:00:33,257 - kafka.conn - WARNING - DNS lookup failed for kafka:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-10-28 09:00:33,257 - kafka.conn - ERROR - DNS lookup failed for kafka:29092 (AddressFamily.AF_UNSPEC)
+2025-10-28 09:00:33,258 - stock_collector - ERROR - Kafka Producer 연결 실패: NoBrokersAvailable
+2025-10-28 09:00:33,258 - stock_collector - ERROR - Kafka Producer가 없습니다. 데이터 수집을 중단합니다.
+2025-10-28 09:08:21,338 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-28 09:08:21,350 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:08:21,352 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 09:08:21,353 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:08:21,458 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 09:08:21,460 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 09:08:21,463 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 09:08:21,465 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-28 09:09:23,300 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:09:23,322 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:09:23,326 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-28 09:09:23,385 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 09:10:02,541 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 09:10:44,599 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 09:11:17,422 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 09:11:57,772 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 09:12:40,688 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 09:13:28,465 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 09:13:28,467 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 09:19:00,937 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 09:19:36,909 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 09:20:19,561 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 09:20:58,913 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 09:21:47,388 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 09:22:37,157 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 09:23:36,078 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 09:23:36,082 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 09:29:10,037 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 09:29:56,771 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 09:30:41,098 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 09:31:29,313 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 09:32:12,860 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 09:32:52,895 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 09:33:32,908 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 09:33:32,910 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 09:39:26,780 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.03%
+2025-10-28 09:40:03,590 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 531.41, 변동률 -0.20%
+2025-10-28 09:40:45,414 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.27, 변동률 -0.20%
+2025-10-28 09:41:34,961 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 226.98, 변동률 -0.16%
+2025-10-28 09:42:30,556 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 452.35, 변동률 -0.20%
+2025-10-28 09:43:02,110 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
+2025-10-28 09:43:58,495 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
+2025-10-28 09:43:58,498 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.

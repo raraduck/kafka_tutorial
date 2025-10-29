@@ -8,12 +8,15 @@ yfinance 라이브러리를 사용하여 주식 데이터를 수집하고 Kafka�
 
 import yfinance as yf
 import json
-import time
+import time, random
 import sys
 import os
 import logging
 from datetime import datetime
 from kafka import KafkaProducer
+# from curl_cffi import requests
+
+# session = requests.Session(impersonate="chrome")
 
 # 상위 디렉토리를 path에 추가하여 다른 모듈을 import할 수 있도록 함
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -54,9 +57,11 @@ def collect_stock_data(producer):
     while True:
         for ticker in STOCK_TICKERS:
             try:
+                # logger.info(f"디버깅중...")
+                time.sleep(random.uniform(30, 60)) # ✅ 종목별 요청 간격 10초 추가
                 # 최근 1일 데이터 가져오기 (1분 간격)
-                data = yf.download(ticker, period='1d', interval='1m')
-                
+                data = yf.download(ticker, period='1d', interval='5m')
+            
                 if not data.empty:
                     # 가장 최근 데이터 추출
                     latest = data.iloc[-1]
@@ -85,6 +90,62 @@ def collect_stock_data(producer):
         # 다음 데이터 수집까지 대기
         logger.info(f"{STOCK_COLLECTION_INTERVAL}초 후 다음 데이터 수집을 시작합니다.")
         time.sleep(STOCK_COLLECTION_INTERVAL)
+
+
+    # while True:
+    #     try:
+    #         time.sleep(random.uniform(30, 60))
+    #         # ✅ 여러 종목을 한 번에 요청 (호출 1회로 모두 수집)
+    #         data = yf.download(
+    #             STOCK_TICKERS,
+    #             period='1d',
+    #             interval='15m',
+    #             group_by='ticker'
+    #         )
+
+    #         now_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    #         logger.info(f"다음 종목들의 데이터 수집 시작: {', '.join(STOCK_TICKERS)}")
+
+    #         for ticker in STOCK_TICKERS:
+    #             try:
+    #                 # 종목별 데이터프레임 분리
+    #                 df = data[ticker]
+
+    #                 if not df.empty:
+    #                     latest = df.iloc[-1]
+
+    #                     message = {
+    #                         'ticker': ticker,
+    #                         'timestamp': now_str,
+    #                         'open': float(latest['Open']),
+    #                         'high': float(latest['High']),
+    #                         'low': float(latest['Low']),
+    #                         'close': float(latest['Close']),
+    #                         'volume': int(latest['Volume']),
+    #                         'change_pct': float(
+    #                             (latest['Close'] - df.iloc[-2]['Close']) / df.iloc[-2]['Close'] * 100
+    #                         ) if len(df) > 1 else 0.0
+    #                     }
+
+    #                     # Kafka로 전송
+    #                     producer.send(STOCK_PRICES_TOPIC, message)
+    #                     logger.info(
+    #                         f"종목 {ticker} 데이터 전송 완료: "
+    #                         f"현재가 {message['close']:.2f}, 변동률 {message['change_pct']:.2f}%"
+    #                     )
+    #                 else:
+    #                     logger.warning(f"종목 {ticker}에 대한 데이터가 비어 있습니다.")
+
+    #             except Exception as e:
+    #                 logger.error(f"종목 {ticker} 처리 중 오류 발생: {e}")
+
+    #         # ✅ 다음 수집 주기까지 대기
+    #         logger.info(f"{STOCK_COLLECTION_INTERVAL}초 후 다음 데이터 수집을 시작합니다.")
+    #         time.sleep(STOCK_COLLECTION_INTERVAL)
+
+    #     except Exception as e:
+    #         logger.error(f"데이터 수집 중 오류 발생: {e}")
+    #         time.sleep(STOCK_COLLECTION_INTERVAL)
 
 def main():
     """메인 함수"""

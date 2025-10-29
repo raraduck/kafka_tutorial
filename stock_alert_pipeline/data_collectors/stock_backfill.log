@@ -1,0 +1,194 @@
+2025-10-28 07:52:46,985 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-01-02
+2025-10-28 07:52:46,985 - stock_backfill - INFO - 분석 대상 종목: OHLCV, AAPL
+2025-10-28 07:52:46,990 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-10-28 07:52:46,991 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 07:52:46,992 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+2025-10-28 07:52:46,992 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 07:52:47,038 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-10-28 07:52:47,042 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+2025-10-28 07:52:47,045 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 07:52:47,088 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-10-28 07:52:47,090 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]> returned error 99. Disconnecting.
+2025-10-28 07:52:47,091 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: 99 EADDRNOTAVAIL
+2025-10-28 07:52:47,093 - stock_backfill - ERROR - Kafka Producer 연결 실패: NoBrokersAvailable
+2025-10-28 07:52:47,094 - stock_backfill - ERROR - Kafka Producer가 없습니다. 데이터 수집을 중단합니다.
+2025-10-28 07:54:15,380 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-01-02
+2025-10-28 07:54:15,381 - stock_backfill - INFO - 분석 대상 종목: OHLCV, AAPL
+2025-10-28 07:54:15,386 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 07:54:15,386 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 07:54:15,387 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 07:54:15,495 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 07:54:15,496 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 07:54:15,499 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 07:54:15,500 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: OHLCV, AAPL
+2025-10-28 07:54:34,413 - yfinance - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OHLCV"}}}
+2025-10-28 07:54:34,747 - yfinance - ERROR - 
+1 Failed download:
+2025-10-28 07:54:34,748 - yfinance - ERROR - ['OHLCV']: YFTzMissingError('possibly delisted; no timezone found')
+2025-10-28 07:54:34,764 - stock_backfill - WARNING - 종목 OHLCV에 대한 데이터를 가져올 수 없습니다.
+2025-10-28 07:54:49,856 - stock_backfill - INFO - 사용자에 의해 프로그램이 종료되었습니다.
+2025-10-28 07:54:49,861 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 07:54:49,864 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 07:54:49,869 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 07:56:25,981 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-01-02
+2025-10-28 07:56:25,982 - stock_backfill - INFO - 분석 대상 종목: GOOGL, AAPL
+2025-10-28 07:56:25,987 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 07:56:25,988 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 07:56:25,989 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 07:56:26,100 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 07:56:26,100 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 07:56:26,103 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 07:56:26,103 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL, AAPL
+2025-10-28 07:56:46,867 - yfinance - ERROR - 
+1 Failed download:
+2025-10-28 07:56:46,870 - yfinance - ERROR - ['GOOGL']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-01-01 00:00:00 -> 2025-01-02 00:00:00)')
+2025-10-28 07:56:46,893 - stock_backfill - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-28 07:56:46,894 - stock_backfill - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 07:58:51,747 - stock_backfill - INFO - 사용자에 의해 프로그램이 종료되었습니다.
+2025-10-28 07:58:51,753 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 07:58:51,757 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 07:58:51,762 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 07:59:07,351 - stock_backfill - INFO - 주식 백필링 시작: 2025-05-05 ~ 2025-05-02
+2025-10-28 07:59:07,351 - stock_backfill - INFO - 분석 대상 종목: GOOGL, AAPL
+2025-10-28 07:59:07,356 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 07:59:07,357 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 07:59:07,358 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 07:59:07,464 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 07:59:07,465 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 07:59:07,468 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 07:59:07,468 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL, AAPL
+2025-10-28 07:59:25,760 - yfinance - ERROR - 
+1 Failed download:
+2025-10-28 07:59:25,762 - yfinance - ERROR - ['GOOGL']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-05-05 00:00:00 -> 2025-05-02 00:00:00) (Yahoo error = "Invalid input - start date cannot be after end date. startDate = 1746417600, endDate = 1746158400")')
+2025-10-28 07:59:25,785 - stock_backfill - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-28 07:59:25,786 - stock_backfill - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 07:59:43,768 - stock_backfill - INFO - 사용자에 의해 프로그램이 종료되었습니다.
+2025-10-28 07:59:43,776 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 07:59:43,795 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 07:59:43,827 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 08:00:55,580 - stock_backfill - INFO - 주식 백필링 시작: 2025-05-05 ~ 2025-05-06
+2025-10-28 08:00:55,580 - stock_backfill - INFO - 분석 대상 종목: GOOGL, AAPL
+2025-10-28 08:00:55,584 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 08:00:55,585 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 08:00:55,586 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 08:00:55,707 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 08:00:55,708 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 08:00:55,711 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 08:00:55,711 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL, AAPL
+2025-10-28 08:01:20,567 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 08:01:20,569 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 08:01:20,569 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 08:01:20,906 - stock_backfill - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 163.86, 변동률 0.00%
+2025-10-28 08:01:20,909 - stock_backfill - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-28 08:02:30,726 - stock_backfill - INFO - 사용자에 의해 프로그램이 종료되었습니다.
+2025-10-28 08:02:30,732 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 08:02:30,736 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 08:02:30,740 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 08:02:54,807 - stock_backfill - INFO - 주식 백필링 시작: 2025-05-05 ~ 2025-05-10
+2025-10-28 08:02:54,808 - stock_backfill - INFO - 분석 대상 종목: GOOGL, AAPL
+2025-10-28 08:02:54,812 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 08:02:54,813 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 08:02:54,814 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 08:02:54,921 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 08:02:54,921 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 08:02:54,924 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 08:02:54,924 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL, AAPL
+2025-10-28 08:03:20,396 - stock_backfill - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 152.43, 변동률 -0.99%
+2025-10-28 08:03:20,399 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 08:03:20,400 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 08:03:20,401 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 08:03:44,932 - stock_backfill - INFO - 종목 AAPL 데이터 전송 완료: 현재가 198.05, 변동률 0.53%
+2025-10-28 08:03:44,943 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 08:03:44,976 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 08:03:44,979 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 08:09:02,753 - stock_backfill - INFO - 주식 백필링 시작: 2025-05-05 ~ 2025-05-10
+2025-10-28 08:09:02,754 - stock_backfill - INFO - 분석 대상 종목: GOOGL, AAPL
+2025-10-28 08:09:02,759 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 08:09:02,760 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 08:09:02,761 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 08:09:02,868 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 08:09:02,868 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 08:09:02,871 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 08:09:02,871 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL, AAPL
+2025-10-28 08:09:27,503 - stock_backfill - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 152.43, 변동률 -0.99%
+2025-10-28 08:09:27,505 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: connecting to kafka:29092 [('172.31.0.10', 29092) IPv4]
+2025-10-28 08:09:27,506 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.31.0.10', 29092)]>: Connection complete.
+2025-10-28 08:09:27,506 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 08:09:45,858 - stock_backfill - INFO - 종목 AAPL 데이터 전송 완료: 현재가 198.05, 변동률 0.53%
+2025-10-28 08:09:45,860 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 08:09:45,865 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.31.0.10', 29092)]>: Closing connection. 
+2025-10-28 08:09:45,866 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 09:26:35,496 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-05-13
+2025-10-28 09:26:35,497 - stock_backfill - INFO - 분석 대상 종목: AAPL, MSFT, GOOGL
+2025-10-28 09:26:35,501 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-10-28 09:26:35,502 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 09:26:35,503 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+2025-10-28 09:26:35,503 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:26:35,548 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-10-28 09:26:35,549 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+2025-10-28 09:26:35,550 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-10-28 09:26:35,598 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-10-28 09:26:35,599 - kafka.conn - ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]> returned error 99. Disconnecting.
+2025-10-28 09:26:35,600 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: 99 EADDRNOTAVAIL
+2025-10-28 09:26:35,600 - stock_backfill - ERROR - Kafka Producer 연결 실패: NoBrokersAvailable
+2025-10-28 09:26:35,601 - stock_backfill - ERROR - Kafka Producer가 없습니다. 데이터 수집을 중단합니다.
+2025-10-28 09:27:20,175 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-05-13
+2025-10-28 09:27:20,176 - stock_backfill - INFO - 분석 대상 종목: AAPL, MSFT, GOOGL
+2025-10-28 09:27:20,179 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:27:20,180 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 09:27:20,181 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:27:20,299 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 09:27:20,300 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 09:27:20,303 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 09:27:20,303 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL
+2025-10-28 09:27:39,755 - stock_backfill - ERROR - 종목 AAPL 데이터 수집 중 오류 발생: can only concatenate str (not "datetime.timedelta") to str
+2025-10-28 09:28:01,880 - stock_backfill - ERROR - 종목 MSFT 데이터 수집 중 오류 발생: can only concatenate str (not "datetime.timedelta") to str
+2025-10-28 09:28:09,300 - stock_backfill - INFO - 사용자에 의해 프로그램이 종료되었습니다.
+2025-10-28 09:28:09,307 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 09:28:09,310 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-28 09:28:09,314 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 09:29:08,033 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-05-13
+2025-10-28 09:29:08,034 - stock_backfill - INFO - 분석 대상 종목: GOOGL
+2025-10-28 09:29:08,037 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:29:08,038 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 09:29:08,039 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:29:08,146 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 09:29:08,147 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 09:29:08,149 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 09:29:08,149 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL
+2025-10-28 09:29:28,336 - stock_backfill - ERROR - 종목 GOOGL 데이터 수집 중 오류 발생: can only concatenate str (not "datetime.timedelta") to str
+2025-10-28 09:29:28,338 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 09:29:28,338 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-28 09:29:28,340 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 09:30:42,799 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-05-13
+2025-10-28 09:30:42,800 - stock_backfill - INFO - 분석 대상 종목: GOOGL
+2025-10-28 09:30:42,803 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:30:42,804 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 09:30:42,805 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:30:42,913 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 09:30:42,914 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 09:30:42,926 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 09:30:42,928 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL
+2025-10-28 09:31:05,947 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:31:05,951 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:31:05,952 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-28 09:31:06,264 - stock_backfill - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 158.13, 변동률 3.74%
+2025-10-28 09:31:06,265 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 09:31:06,270 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-28 09:31:06,271 - stock_backfill - INFO - Kafka Producer 연결 종료
+2025-10-28 09:32:28,776 - stock_backfill - INFO - 주식 백필링 시작: 2025-01-01 ~ 2025-05-13
+2025-10-28 09:32:28,777 - stock_backfill - INFO - 분석 대상 종목: GOOGL
+2025-10-28 09:32:28,781 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:32:28,782 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-28 09:32:28,783 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:32:28,888 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-28 09:32:28,888 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-28 09:32:28,891 - stock_backfill - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-28 09:32:28,892 - stock_backfill - INFO - 다음 종목들의 데이터 수집 시작: GOOGL
+2025-10-28 09:32:40,404 - stock_backfill - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 158.13, 변동률 3.74%
+2025-10-28 09:32:40,406 - kafka.producer.kafka - INFO - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-10-28 09:32:40,407 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: connecting to kafka:29092 [('172.19.0.10', 29092) IPv4]
+2025-10-28 09:32:40,409 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.10', 29092)]>: Connection complete.
+2025-10-28 09:32:40,409 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-28 09:32:40,423 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.19.0.10', 29092)]>: Closing connection. 
+2025-10-28 09:32:40,425 - stock_backfill - INFO - Kafka Producer 연결 종료

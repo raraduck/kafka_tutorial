@@ -10,6 +10,8 @@ RUN apt-get update && \
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --upgrade pip setuptools wheel
+RUN pip install https://www.pandas-ta.dev/assets/zip/pandas_ta-0.3.14b.tar.gz yfinance
 
 COPY . .
 
@@ -17,3 +19,4 @@ COPY . .
 RUN mkdir -p logs
 
 CMD ["python", "-m", "data_processors.price_alert_processor"]
+# CMD ["python", "--version"]

@@ -1,5 +1,5 @@
 # Dockerfile.spark
-FROM bitnami/spark:latest
+FROM bitnamilegacy/spark:3.4.1
 
 USER root
 RUN pip install python-dotenv pyspark pandas numpy matplotlib scikit-learn

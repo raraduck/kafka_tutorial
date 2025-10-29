@@ -771,8 +771,8 @@ def parse_args():
     # - 예: ds가 2024-01-01인 경우
     #   - start_date: 2024-01-03 (ds + 2일)
     #   - end_date: 2024-01-04 (ds + 3일)
-    args.start_date = datetime.strptime(args.start_date, '%Y-%m-%d')+timedelta(days=2)
-    args.end_date = datetime.strptime(args.end_date, '%Y-%m-%d')+timedelta(days=3)
+    args.start_date = datetime.strptime(args.start_date, '%Y-%m-%d')-timedelta(days=3)
+    args.end_date = datetime.strptime(args.end_date, '%Y-%m-%d')+timedelta(days=1)
     
     # 종목 리스트 처리
     if args.tickers:
@@ -784,8 +784,9 @@ def main():
     """메인 함수"""
     # 명령줄 인수 파싱
     args = parse_args()
+
     
-    # Spark 세션 생성 및 분석기 초기화
+    # # Spark 세션 생성 및 분석기 초기화
     analyzer = StockBatchAnalyzer()
     
     try:

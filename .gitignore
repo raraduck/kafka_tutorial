@@ -6,3 +6,6 @@ config
 logs
 tmp
 plugins
+*.cfg
+*.pid
+data
