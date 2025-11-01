@@ -39,7 +39,7 @@ services:
       KAFKA_MIN_INSYNC_REPLICAS: 2
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
     # volumes:
     #   - kafka1-data:/var/lib/kafka/data
     volumes:
@@ -74,7 +74,7 @@ services:
       KAFKA_MIN_INSYNC_REPLICAS: 2
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
     # volumes:
     #   - kafka2-data:/var/lib/kafka/data
     volumes:
@@ -110,7 +110,7 @@ services:
       KAFKA_MIN_INSYNC_REPLICAS: 2
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
     # volumes:
     #   - kafka3-data:/var/lib/kafka/data
     volumes:

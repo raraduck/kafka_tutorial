@@ -11,10 +11,11 @@ import sys
 import argparse
 import json
 from datetime import datetime, timedelta
+from kafka import KafkaProducer
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import (
     col, expr, avg, max, min, lag,
-    from_json, to_timestamp, first, last, sum, count
+    from_json, to_timestamp, first, last, sum, count, to_json, struct
 )
 from pyspark.sql.types import (
     StructType, StructField, StringType, DoubleType,
@@ -771,14 +772,38 @@ def parse_args():
     # - 예: ds가 2024-01-01인 경우
     #   - start_date: 2024-01-03 (ds + 2일)
     #   - end_date: 2024-01-04 (ds + 3일)
-    args.start_date = datetime.strptime(args.start_date, '%Y-%m-%d')-timedelta(days=3)
-    args.end_date = datetime.strptime(args.end_date, '%Y-%m-%d')+timedelta(days=1)
+    args.start_date = datetime.strptime(args.start_date, '%Y-%m-%d') # -timedelta(days=3)
+    args.end_date = datetime.strptime(args.end_date, '%Y-%m-%d') # +timedelta(days=1)
     
     # 종목 리스트 처리
     if args.tickers:
         args.tickers = args.tickers.split(',')
     
     return args
+
+def get_kafka_producer():
+    # KafkaProducer는 직렬화 문제가 있을 수 있으므로, Executor에서 필요시 생성
+    return KafkaProducer(
+        bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
+        value_serializer=lambda v: json.dumps(v).encode('utf-8')
+    )
+
+def send_to_kafka_summary_activity(batch_df, epoch_id):
+    if batch_df.count() > 0:
+        producer = get_kafka_producer()
+        for row in batch_df.collect():
+            message = row.asDict()
+            # window 객체를 문자열로 변환 (Kafka 전송을 위해)
+            if 'window' in message and hasattr(message['window'], 'start') and hasattr(message['window'], 'end'):
+                message['window_start'] = message['window'].start.isoformat()
+                message['window_end'] = message['window'].end.isoformat()
+                del message['window'] # 원본 window 객체 삭제
+            
+            producer.send("stock-summary", value=message)
+        producer.flush()
+        producer.close()
+    else:
+        print(f"Epoch {epoch_id}: No summary detected in this batch.")
 
 def main():
     """메인 함수"""
@@ -846,7 +871,22 @@ def main():
         
         # 종목별 요약 (일별 데이터 사용)
         summary_df = analyzer.summarize_by_ticker(stock_data.daily_data)
+
+        # Kafka 메시지 포맷으로 변환
+        kafka_ready_df = summary_df \
+            .withColumn("key", col("ticker").cast("string")) \
+            .withColumn("value", to_json(struct(*summary_df.columns)))
+
+        # Kafka 토픽에 배치 결과 쓰기
+        kafka_ready_df.select("key", "value") \
+            .write \
+            .format("kafka") \
+            .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS) \
+            .option("topic", "stock-summary") \
+            .save()
         
+        print("✅ summary_df가 Kafka 토픽 'stock-summary'에 성공적으로 기록되었습니다.")
+
         # 결과 저장
         analyzer.save_results(summary_df, output_path=args.output_path, format=args.format)
         

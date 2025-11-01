@@ -811,3 +811,487 @@
 2025-10-28 09:43:02,110 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 99500.00, 변동률 0.10%
 2025-10-28 09:43:58,495 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 518000.00, 변동률 0.78%
 2025-10-28 09:43:58,498 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 10:39:33,376 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 10:39:33,388 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.22.0.12', 29092)]>: connecting to kafka:29092 [('172.22.0.12', 29092) IPv4]
+2025-10-29 10:39:33,392 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 10:39:33,396 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.22.0.12', 29092)]>: Connection complete.
+2025-10-29 10:39:33,522 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 10:39:33,523 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 10:39:33,528 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 10:39:33,532 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 10:42:15,672 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 10:42:15,685 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: connecting to kafka:29092 [('172.23.0.12', 29092) IPv4]
+2025-10-29 10:42:15,688 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 10:42:15,692 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: Connection complete.
+2025-10-29 10:42:15,814 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 10:42:15,815 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 10:42:15,819 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 10:42:15,822 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 10:42:53,530 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.03, 변동률 -0.03%
+2025-10-29 10:42:53,534 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: connecting to kafka:29092 [('172.23.0.12', 29092) IPv4]
+2025-10-29 10:42:53,535 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: Connection complete.
+2025-10-29 10:42:53,536 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.23.0.12', 29092)]>: Closing connection. 
+2025-10-29 10:43:31,586 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.01, 변동률 -0.12%
+2025-10-29 10:44:12,640 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 267.49, 변동률 0.00%
+2025-10-29 10:44:50,749 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.24, 변동률 0.20%
+2025-10-29 10:45:33,102 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 460.54, 변동률 0.03%
+2025-10-29 10:46:06,896 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 10:47:03,290 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 10:47:03,292 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 11:44:02,023 - kafka.client - INFO - Closing idle connection 1, last active 3368454 ms ago
+2025-10-29 11:44:02,030 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.23.0.12', 29092)]>: Closing connection. 
+2025-10-29 11:44:02,103 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: connecting to kafka:29092 [('172.23.0.12', 29092) IPv4]
+2025-10-29 11:44:02,105 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: Connection complete.
+2025-10-29 11:44:21,139 - yfinance - ERROR - 
+1 Failed download:
+2025-10-29 11:44:21,141 - yfinance - ERROR - ['AAPL']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-29 11:44:21,155 - stock_collector - WARNING - 종목 AAPL에 대한 데이터를 가져올 수 없습니다.
+2025-10-29 13:21:47,371 - kafka.client - INFO - Closing idle connection 1, last active 5865263 ms ago
+2025-10-29 13:21:47,376 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.23.0.12', 29092)]>: Closing connection. 
+2025-10-29 13:21:47,447 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: connecting to kafka:29092 [('172.23.0.12', 29092) IPv4]
+2025-10-29 13:21:47,450 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: Connection complete.
+2025-10-29 13:22:06,738 - yfinance - ERROR - 
+1 Failed download:
+2025-10-29 13:22:06,739 - yfinance - ERROR - ['MSFT']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-29 13:22:06,769 - stock_collector - WARNING - 종목 MSFT에 대한 데이터를 가져올 수 없습니다.
+2025-10-29 13:43:55,626 - kafka.client - INFO - Closing idle connection 1, last active 1328153 ms ago
+2025-10-29 13:43:55,629 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connected> [IPv4 ('172.23.0.12', 29092)]>: Closing connection. 
+2025-10-29 13:43:55,684 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: connecting to kafka:29092 [('172.23.0.12', 29092) IPv4]
+2025-10-29 13:43:55,685 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.23.0.12', 29092)]>: Connection complete.
+2025-10-29 13:44:38,885 - yfinance - ERROR - 
+1 Failed download:
+2025-10-29 13:44:38,888 - yfinance - ERROR - ['GOOGL']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-29 13:44:38,907 - stock_collector - WARNING - 종목 GOOGL에 대한 데이터를 가져올 수 없습니다.
+2025-10-29 13:45:13,306 - yfinance - ERROR - 
+1 Failed download:
+2025-10-29 13:45:13,308 - yfinance - ERROR - ['AMZN']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-29 13:45:13,319 - stock_collector - WARNING - 종목 AMZN에 대한 데이터를 가져올 수 없습니다.
+2025-10-29 13:46:05,534 - yfinance - ERROR - 
+1 Failed download:
+2025-10-29 13:46:05,535 - yfinance - ERROR - ['TSLA']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-29 13:46:05,547 - stock_collector - WARNING - 종목 TSLA에 대한 데이터를 가져올 수 없습니다.
+2025-10-29 13:46:37,581 - yfinance - ERROR - 
+1 Failed download:
+2025-10-29 13:46:37,584 - yfinance - ERROR - ['005930.KS']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-10-29 13:46:37,595 - stock_collector - WARNING - 종목 005930.KS에 대한 데이터를 가져올 수 없습니다.
+2025-10-29 13:47:30,488 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 13:47:30,489 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 13:53:14,573 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.43, 변동률 0.09%
+2025-10-29 13:54:10,935 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.51, 변동률 0.11%
+2025-10-29 13:54:46,639 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 268.55, 변동률 -0.02%
+2025-10-29 13:55:36,295 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.56, 변동률 -0.09%
+2025-10-29 13:56:18,599 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 463.79, 변동률 0.09%
+2025-10-29 13:56:56,180 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 13:57:55,943 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 13:57:55,946 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 14:03:51,844 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 271.05, 변동률 0.06%
+2025-10-29 14:04:43,399 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.10, 변동률 -0.12%
+2025-10-29 14:05:14,159 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 268.85, 변동률 -0.03%
+2025-10-29 14:06:02,342 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 227.96, 변동률 -0.11%
+2025-10-29 14:06:58,121 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 463.82, 변동률 0.05%
+2025-10-29 14:07:37,593 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 14:08:22,622 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 14:08:22,624 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 14:14:03,775 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.90, 변동률 0.08%
+2025-10-29 14:14:43,443 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.38, 변동률 0.13%
+2025-10-29 14:15:33,806 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 268.35, 변동률 -0.12%
+2025-10-29 14:16:31,552 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 228.98, 변동률 0.15%
+2025-10-29 14:17:04,597 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 463.70, 변동률 0.09%
+2025-10-29 14:17:56,483 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 14:18:55,869 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 14:18:55,872 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 14:24:26,557 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.38, 변동률 -0.11%
+2025-10-29 14:25:20,817 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 537.50, 변동률 -0.04%
+2025-10-29 14:26:17,465 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.08, 변동률 -0.01%
+2025-10-29 14:27:02,521 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.18, 변동률 -0.02%
+2025-10-29 14:27:39,484 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.93, 변동률 0.14%
+2025-10-29 14:28:14,955 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 14:29:14,079 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 14:29:14,081 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 14:34:53,086 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.93, 변동률 -0.18%
+2025-10-29 14:35:35,295 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.09, 변동률 0.01%
+2025-10-29 14:36:12,487 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.24, 변동률 0.03%
+2025-10-29 14:36:44,851 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.23, 변동률 0.07%
+2025-10-29 14:37:17,832 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.51, 변동률 -0.05%
+2025-10-29 14:38:11,864 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 14:38:58,113 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 14:38:58,114 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 14:44:58,526 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.01%
+2025-10-29 14:45:58,667 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.12, 변동률 0.01%
+2025-10-29 14:46:38,756 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 269.49, 변동률 0.10%
+2025-10-29 14:47:21,536 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.74, 변동률 0.25%
+2025-10-29 14:48:03,969 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 459.99, 변동률 0.10%
+2025-10-29 14:48:51,418 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 14:49:28,245 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 14:49:28,247 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 14:55:06,956 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.35, 변동률 0.00%
+2025-10-29 14:56:04,458 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.14, 변동률 -0.01%
+2025-10-29 14:56:55,745 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 270.43, 변동률 0.09%
+2025-10-29 14:57:44,320 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.30, 변동률 -0.02%
+2025-10-29 14:58:23,318 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.86, 변동률 -0.11%
+2025-10-29 14:59:12,060 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 14:59:47,700 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 14:59:47,701 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 15:05:25,498 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.58, 변동률 0.03%
+2025-10-29 15:05:59,613 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.69, 변동률 0.05%
+2025-10-29 15:06:31,762 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 270.79, 변동률 0.02%
+2025-10-29 15:07:28,483 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.05, 변동률 0.03%
+2025-10-29 15:08:03,157 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 459.14, 변동률 -0.10%
+2025-10-29 15:09:01,505 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 15:09:55,521 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 15:09:55,522 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 15:15:29,504 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.59, 변동률 -0.07%
+2025-10-29 15:16:02,071 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.15, 변동률 -0.06%
+2025-10-29 15:17:00,606 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 270.15, 변동률 0.02%
+2025-10-29 15:17:56,578 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.41, 변동률 0.17%
+2025-10-29 15:18:45,746 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.88, 변동률 0.05%
+2025-10-29 15:19:25,708 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 15:20:13,216 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 15:20:13,218 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 15:25:58,380 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.18, 변동률 -0.05%
+2025-10-29 15:26:43,733 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.10, 변동률 -0.00%
+2025-10-29 15:27:37,265 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 270.65, 변동률 0.05%
+2025-10-29 15:28:35,106 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.65, 변동률 -0.23%
+2025-10-29 15:29:13,968 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.90, 변동률 -0.18%
+2025-10-29 15:29:57,193 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 15:30:32,199 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 15:30:32,201 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 15:36:13,066 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 267.66, 변동률 0.03%
+2025-10-29 15:37:07,982 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 537.30, 변동률 0.09%
+2025-10-29 15:37:44,142 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 270.76, 변동률 -0.02%
+2025-10-29 15:38:42,901 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.74, 변동률 0.10%
+2025-10-29 15:39:41,746 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.52, 변동률 0.03%
+2025-10-29 15:40:39,421 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 15:41:30,013 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 15:41:30,015 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 15:47:00,860 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 267.93, 변동률 0.00%
+2025-10-29 15:47:43,771 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 537.61, 변동률 0.03%
+2025-10-29 15:48:39,941 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.23, 변동률 0.15%
+2025-10-29 15:49:28,072 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.37, 변동률 0.12%
+2025-10-29 15:50:14,780 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 459.13, 변동률 -0.01%
+2025-10-29 15:51:12,290 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 15:51:47,971 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 15:51:47,973 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 15:57:42,510 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 267.86, 변동률 -0.04%
+2025-10-29 15:58:17,065 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.54, 변동률 -0.04%
+2025-10-29 15:59:08,931 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.15, 변동률 -0.02%
+2025-10-29 15:59:56,432 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.46, 변동률 0.07%
+2025-10-29 16:00:52,446 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 459.18, 변동률 0.02%
+2025-10-29 16:01:33,760 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 16:02:04,335 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 16:02:04,337 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 16:07:59,464 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.37, 변동률 0.11%
+2025-10-29 16:08:49,934 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.23, 변동률 0.04%
+2025-10-29 16:09:26,499 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.11, 변동률 -0.01%
+2025-10-29 16:10:01,912 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.20, 변동률 0.01%
+2025-10-29 16:10:42,344 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 457.78, 변동률 -0.05%
+2025-10-29 16:11:42,238 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 16:12:24,815 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 16:12:24,818 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 16:18:14,086 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.64, 변동률 -0.01%
+2025-10-29 16:18:54,076 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.52, 변동률 -0.12%
+2025-10-29 16:19:29,196 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.76, 변동률 0.04%
+2025-10-29 16:20:27,811 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.21, 변동률 0.04%
+2025-10-29 16:21:09,948 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.95, 변동률 0.13%
+2025-10-29 16:22:09,252 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 16:23:07,502 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 16:23:07,504 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 16:28:58,125 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.51, 변동률 -0.05%
+2025-10-29 16:29:42,810 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.43, 변동률 -0.06%
+2025-10-29 16:30:34,286 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.90, 변동률 0.02%
+2025-10-29 16:31:29,571 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.29, 변동률 -0.03%
+2025-10-29 16:32:13,613 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 459.63, 변동률 0.06%
+2025-10-29 16:32:50,102 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 16:33:22,901 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 16:33:22,902 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 16:38:54,254 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.75, 변동률 -0.00%
+2025-10-29 16:39:54,310 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.93, 변동률 0.10%
+2025-10-29 16:40:35,566 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.03, 변동률 -0.00%
+2025-10-29 16:41:20,609 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.37, 변동률 0.13%
+2025-10-29 16:42:09,484 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 459.36, 변동률 0.02%
+2025-10-29 16:42:58,830 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 16:43:35,631 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 16:43:35,632 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 16:49:10,842 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.01, 변동률 0.03%
+2025-10-29 16:50:06,646 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.73, 변동률 0.00%
+2025-10-29 16:50:41,576 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.82, 변동률 -0.02%
+2025-10-29 16:51:34,966 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.12, 변동률 0.01%
+2025-10-29 16:52:15,374 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 460.36, 변동률 0.16%
+2025-10-29 16:52:51,588 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 16:53:50,627 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 16:53:50,629 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 16:59:35,780 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.74, 변동률 -0.08%
+2025-10-29 17:00:09,181 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.82, 변동률 0.05%
+2025-10-29 17:00:47,545 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.60, 변동률 -0.02%
+2025-10-29 17:01:20,453 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 231.05, 변동률 0.05%
+2025-10-29 17:02:09,958 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 459.84, 변동률 -0.05%
+2025-10-29 17:02:55,198 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 17:03:30,941 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 17:03:30,943 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 17:09:25,332 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.25, 변동률 0.02%
+2025-10-29 17:09:59,811 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.21, 변동률 0.01%
+2025-10-29 17:10:45,668 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.73, 변동률 0.00%
+2025-10-29 17:11:24,562 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.88, 변동률 0.04%
+2025-10-29 17:12:04,798 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.62, 변동률 0.11%
+2025-10-29 17:12:57,057 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 17:13:34,159 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 17:13:34,161 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 17:19:08,221 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.28, 변동률 0.01%
+2025-10-29 17:19:56,830 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.47, 변동률 -0.04%
+2025-10-29 17:20:35,772 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.70, 변동률 0.01%
+2025-10-29 17:21:14,109 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.58, 변동률 -0.03%
+2025-10-29 17:22:14,508 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 460.29, 변동률 -0.01%
+2025-10-29 17:23:10,276 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 17:23:45,879 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 17:23:45,880 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 17:29:33,994 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.86, 변동률 0.05%
+2025-10-29 17:30:16,599 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.71, 변동률 -0.02%
+2025-10-29 17:31:12,415 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.15, 변동률 0.05%
+2025-10-29 17:32:05,990 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.29, 변동률 -0.04%
+2025-10-29 17:32:51,774 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.77, 변동률 -0.05%
+2025-10-29 17:33:42,330 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 17:34:42,089 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 17:34:42,090 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 17:40:37,721 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.02, 변동률 -0.09%
+2025-10-29 17:41:29,835 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.22, 변동률 0.01%
+2025-10-29 17:42:15,357 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 273.14, 변동률 0.16%
+2025-10-29 17:42:49,441 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.10, 변동률 -0.03%
+2025-10-29 17:43:34,653 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 460.86, 변동률 0.24%
+2025-10-29 17:44:20,229 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 17:45:09,170 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 17:45:09,172 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 17:51:04,347 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.49, 변동률 -0.03%
+2025-10-29 17:51:57,840 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.07, 변동률 0.07%
+2025-10-29 17:52:30,235 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.90, 변동률 0.03%
+2025-10-29 17:53:07,059 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.89, 변동률 0.02%
+2025-10-29 17:53:46,030 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 460.85, 변동률 -0.04%
+2025-10-29 17:54:27,926 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 17:55:27,803 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 17:55:27,804 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 18:01:01,880 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.54, 변동률 0.04%
+2025-10-29 18:01:56,362 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.87, 변동률 -0.01%
+2025-10-29 18:02:28,035 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.96, 변동률 0.03%
+2025-10-29 18:03:03,275 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.63, 변동률 -0.14%
+2025-10-29 18:03:48,539 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.51, 변동률 0.06%
+2025-10-29 18:04:32,176 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 18:05:13,619 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 18:05:13,621 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 18:11:10,535 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.62, 변동률 0.08%
+2025-10-29 18:12:10,894 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.06, 변동률 0.05%
+2025-10-29 18:12:48,421 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.55, 변동률 -0.04%
+2025-10-29 18:13:26,476 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 228.79, 변동률 -0.13%
+2025-10-29 18:14:07,239 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 460.29, 변동률 0.05%
+2025-10-29 18:14:48,354 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 18:15:18,829 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 18:15:18,831 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 18:21:19,246 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.38, 변동률 -0.01%
+2025-10-29 18:22:06,991 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.01, 변동률 0.00%
+2025-10-29 18:22:46,009 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 273.10, 변동률 0.11%
+2025-10-29 18:23:34,291 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.52, 변동률 -0.02%
+2025-10-29 18:24:16,629 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 460.02, 변동률 -0.17%
+2025-10-29 18:24:47,644 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 18:25:40,235 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 18:25:40,239 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 18:31:14,974 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.81, 변동률 0.00%
+2025-10-29 18:32:00,881 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.79, 변동률 -0.01%
+2025-10-29 18:32:38,640 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 273.25, 변동률 -0.02%
+2025-10-29 18:33:25,262 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.93, 변동률 0.10%
+2025-10-29 18:34:19,419 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.33, 변동률 0.13%
+2025-10-29 18:35:00,093 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 18:35:56,073 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 18:35:56,075 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 18:41:49,786 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.03, 변동률 -0.15%
+2025-10-29 18:42:24,620 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 537.14, 변동률 -0.17%
+2025-10-29 18:43:12,153 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 271.56, 변동률 0.04%
+2025-10-29 18:43:45,661 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 228.83, 변동률 0.08%
+2025-10-29 18:44:31,175 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 454.36, 변동률 0.00%
+2025-10-29 18:45:27,770 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 18:46:03,811 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 18:46:03,813 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 18:52:03,437 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.70, 변동률 0.21%
+2025-10-29 18:53:02,830 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 539.01, 변동률 0.13%
+2025-10-29 18:53:49,486 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.85, 변동률 0.14%
+2025-10-29 18:54:26,065 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.54, 변동률 0.32%
+2025-10-29 18:55:01,097 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.99, 변동률 0.05%
+2025-10-29 18:55:41,511 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 18:56:30,804 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 18:56:30,805 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 19:02:03,126 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.96, 변동률 -0.20%
+2025-10-29 19:02:43,309 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.40, 변동률 -0.08%
+2025-10-29 19:03:29,239 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 272.99, 변동률 0.02%
+2025-10-29 19:04:21,171 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 228.80, 변동률 -0.30%
+2025-10-29 19:05:06,372 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 458.81, 변동률 0.09%
+2025-10-29 19:05:45,542 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 19:06:37,221 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 19:06:37,223 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 19:22:47,511 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 19:22:47,521 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.12', 29092)]>: connecting to kafka:29092 [('172.21.0.12', 29092) IPv4]
+2025-10-29 19:22:47,524 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 19:22:47,528 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.12', 29092)]>: Connection complete.
+2025-10-29 19:22:47,638 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 19:22:47,638 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 19:22:47,641 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 19:22:47,642 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 19:23:45,524 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 268.66, 변동률 -0.04%
+2025-10-29 19:23:45,526 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.12', 29092)]>: connecting to kafka:29092 [('172.21.0.12', 29092) IPv4]
+2025-10-29 19:23:45,527 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.12', 29092)]>: Connection complete.
+2025-10-29 19:23:45,528 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.21.0.12', 29092)]>: Closing connection. 
+2025-10-29 19:24:40,963 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.98, 변동률 -0.04%
+2025-10-29 19:25:29,996 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 273.47, 변동률 0.09%
+2025-10-29 19:26:24,515 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 229.36, 변동률 0.13%
+2025-10-29 19:27:12,746 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.36, 변동률 0.28%
+2025-10-29 19:28:00,210 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 19:28:34,063 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 19:28:34,065 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 19:34:30,929 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 19:34:30,949 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.22.0.12', 29092)]>: connecting to kafka:29092 [('172.22.0.12', 29092) IPv4]
+2025-10-29 19:34:30,950 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 19:34:30,951 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.22.0.12', 29092)]>: Connection complete.
+2025-10-29 19:34:31,087 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 19:34:31,094 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 19:34:31,106 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 19:34:31,108 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 19:35:43,402 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 267.82, 변동률 -0.05%
+2025-10-29 19:35:43,521 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.22.0.12', 29092)]>: connecting to kafka:29092 [('172.22.0.12', 29092) IPv4]
+2025-10-29 19:35:43,653 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.22.0.12', 29092)]>: Connection complete.
+2025-10-29 19:35:43,677 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.22.0.12', 29092)]>: Closing connection. 
+2025-10-29 19:36:52,247 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 538.33, 변동률 -0.07%
+2025-10-29 19:37:24,696 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 273.53, 변동률 -0.06%
+2025-10-29 19:38:11,570 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 228.66, 변동률 -0.02%
+2025-10-29 19:51:24,531 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 19:51:24,540 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: connecting to kafka:29092 [('172.19.0.9', 29092) IPv4]
+2025-10-29 19:51:24,543 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 19:51:24,546 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: Connection complete.
+2025-10-29 19:51:24,656 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 19:51:24,658 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 19:51:24,665 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 19:51:24,673 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 19:52:08,636 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: connecting to kafka:29092 [('172.19.0.9', 29092) IPv4]
+2025-10-29 19:52:08,637 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: Connection complete.
+2025-10-29 19:52:08,638 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.9', 29092)]>: Closing connection. 
+2025-10-29 19:52:08,642 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 270.26, 변동률 0.24%
+2025-10-29 19:53:00,738 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 541.00, 변동률 0.27%
+2025-10-29 19:53:41,401 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 274.97, 변동률 0.20%
+2025-10-29 19:54:36,170 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.26, 변동률 0.22%
+2025-10-29 19:55:32,967 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.70, 변동률 0.19%
+2025-10-29 19:56:14,715 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 19:57:04,259 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 19:57:04,261 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 20:02:35,854 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 20:03:21,428 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 20:04:14,583 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 20:05:12,802 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 20:05:57,855 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 20:06:47,002 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 20:07:38,705 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 20:07:38,706 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 20:13:14,917 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 20:13:57,033 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 20:14:43,358 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 20:15:18,473 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 20:16:10,125 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 20:16:59,000 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 20:17:30,945 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 20:17:30,947 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 20:21:53,476 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 20:21:53,505 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.11', 29092)]>: connecting to kafka:29092 [('172.21.0.11', 29092) IPv4]
+2025-10-29 20:21:53,510 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 20:21:53,518 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.21.0.11', 29092)]>: Connection complete.
+2025-10-29 20:21:53,632 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 20:21:53,634 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 20:21:53,643 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 20:21:53,648 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 20:22:36,720 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.11', 29092)]>: connecting to kafka:29092 [('172.21.0.11', 29092) IPv4]
+2025-10-29 20:22:36,748 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.21.0.11', 29092)]>: Connection complete.
+2025-10-29 20:22:36,751 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.21.0.11', 29092)]>: Closing connection. 
+2025-10-29 20:22:36,797 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 20:23:35,088 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 20:24:23,650 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 20:28:06,612 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 20:28:06,668 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.11', 29092)]>: connecting to kafka:29092 [('172.19.0.11', 29092) IPv4]
+2025-10-29 20:28:06,680 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 20:28:06,686 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.11', 29092)]>: Connection complete.
+2025-10-29 20:28:06,809 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 20:28:06,809 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 20:28:06,815 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 20:28:06,817 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 20:28:51,663 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.11', 29092)]>: connecting to kafka:29092 [('172.19.0.11', 29092) IPv4]
+2025-10-29 20:28:51,667 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.11', 29092)]>: Connection complete.
+2025-10-29 20:28:51,668 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.11', 29092)]>: Closing connection. 
+2025-10-29 20:28:51,720 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 20:29:41,054 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 20:30:18,889 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 20:30:57,528 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 20:33:27,480 - stock_collector - INFO - 주식 데이터 수집기 시작
+2025-10-29 20:33:27,490 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: connecting to kafka:29092 [('172.19.0.9', 29092) IPv4]
+2025-10-29 20:33:27,494 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-10-29 20:33:27,501 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: Connection complete.
+2025-10-29 20:33:27,608 - kafka.conn - INFO - Broker version identified as 2.5.0
+2025-10-29 20:33:27,609 - kafka.conn - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-29 20:33:27,620 - stock_collector - INFO - Kafka Producer 연결 성공: kafka:29092
+2025-10-29 20:33:27,625 - stock_collector - INFO - 다음 종목들의 데이터 수집 시작: AAPL, MSFT, GOOGL, AMZN, TSLA, 005930.KS, 000660.KS
+2025-10-29 20:34:18,053 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: connecting to kafka:29092 [('172.19.0.9', 29092) IPv4]
+2025-10-29 20:34:18,054 - kafka.conn - INFO - <BrokerConnection node_id=1 host=kafka:29092 <connecting> [IPv4 ('172.19.0.9', 29092)]>: Connection complete.
+2025-10-29 20:34:18,055 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:29092 <connected> [IPv4 ('172.19.0.9', 29092)]>: Closing connection. 
+2025-10-29 20:34:18,059 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 20:35:04,069 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 20:35:54,541 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 20:36:54,391 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 20:37:41,123 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 20:38:38,457 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 20:39:15,647 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 20:39:15,649 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 20:44:49,193 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 20:45:46,697 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 20:46:40,151 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 20:47:37,953 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 20:48:29,790 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 20:49:10,879 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 20:49:46,181 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 20:49:46,183 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 20:55:33,532 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 20:56:33,860 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 20:57:24,840 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 20:58:18,366 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 20:59:06,892 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 20:59:42,566 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 21:00:39,600 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 21:00:39,602 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 21:06:35,223 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 21:07:09,495 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 21:08:01,285 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 21:08:43,830 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 21:09:25,177 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 21:10:02,658 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 21:10:51,363 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 21:10:51,365 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 21:16:46,088 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 21:17:17,818 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 21:18:04,020 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 21:19:01,567 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 21:19:43,148 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 21:20:25,308 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 21:21:09,045 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 21:21:09,047 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 21:26:58,358 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 21:27:49,211 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 21:28:39,654 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 21:29:19,878 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 21:30:13,929 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 21:31:12,253 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 21:31:55,999 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 21:31:56,001 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 21:37:41,790 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 21:38:28,211 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 21:39:01,361 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 21:39:50,063 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 21:40:31,493 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 21:41:21,388 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%
+2025-10-29 21:42:02,470 - stock_collector - INFO - 종목 000660.KS 데이터 전송 완료: 현재가 552500.00, 변동률 0.09%
+2025-10-29 21:42:02,472 - stock_collector - INFO - 300초 후 다음 데이터 수집을 시작합니다.
+2025-10-29 21:47:41,457 - stock_collector - INFO - 종목 AAPL 데이터 전송 완료: 현재가 269.73, 변동률 -0.03%
+2025-10-29 21:48:18,508 - stock_collector - INFO - 종목 MSFT 데이터 전송 완료: 현재가 542.56, 변동률 0.46%
+2025-10-29 21:48:55,428 - stock_collector - INFO - 종목 GOOGL 데이터 전송 완료: 현재가 275.04, 변동률 -0.05%
+2025-10-29 21:49:32,320 - stock_collector - INFO - 종목 AMZN 데이터 전송 완료: 현재가 230.34, 변동률 -0.03%
+2025-10-29 21:50:09,530 - stock_collector - INFO - 종목 TSLA 데이터 전송 완료: 현재가 461.47, 변동률 0.13%
+2025-10-29 21:50:50,760 - stock_collector - INFO - 종목 005930.KS 데이터 전송 완료: 현재가 100000.00, 변동률 0.05%

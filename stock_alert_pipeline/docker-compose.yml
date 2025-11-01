@@ -42,6 +42,9 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      # JMX 설정 추가
+      KAFKA_JMX_PORT: 9999
+      KAFKA_JMX_HOSTNAME: localhost
     volumes:
       - kafka_data:/var/lib/kafka/data
     networks:
@@ -52,6 +55,56 @@ services:
       timeout: 10s
       retries: 3
       start_period: 30s
+
+  # 카프카 익스포터 - 각 브로커별로 설정
+  kafka-exporter:
+    image: danielqsj/kafka-exporter:latest
+    container_name: kafka-exporter
+    depends_on:
+      - kafka
+      # - kafka1
+      # - kafka2
+      # - kafka3
+    ports:
+      - "9308:9308"
+    command:
+      - --kafka.server=kafka:29092
+      # - --kafka.server=kafka1:29092
+      # - --kafka.server=kafka2:29093
+      # - --kafka.server=kafka3:29094
+      - --topic.filter=.*
+      - --group.filter=.*
+    restart: unless-stopped
+    networks:
+      - stock_pipeline_network
+  
+  # Prometheus 설정
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: unless-stopped
+    networks:
+      - stock_pipeline_network
+    
+  # Grafana 설정
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_INSTALL_PLUGINS: grafana-piechart-panel
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - grafana-data:/var/lib/grafana
+    restart: unless-stopped
+    networks:
+      - stock_pipeline_network
 
   # Kafka UI - Kafka 클러스터 관리 웹 인터페이스
   kafka-ui:
@@ -187,20 +240,20 @@ services:
       - stock_pipeline_network
 
   # Jupyter Notebook - 데이터 분석 및 코드 개발용
-  jupyter:
-    image: jupyter/pyspark-notebook:latest
-    container_name: jupyter
-    ports:
-      - "8888:8888"
-    environment:
-      JUPYTER_ENABLE_LAB: "yes"
-      SPARK_OPTS: "--master=spark://spark-master:7077 --driver-memory=1G --executor-memory=1G"
-    volumes:
-      - ./:/home/jovyan/work
-      # - ./jars:/home/jovyan/jars
-    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''
-    networks:
-      - stock_pipeline_network
+  # jupyter:
+  #   image: jupyter/pyspark-notebook:latest
+  #   container_name: jupyter
+  #   ports:
+  #     - "8888:8888"
+  #   environment:
+  #     JUPYTER_ENABLE_LAB: "yes"
+  #     SPARK_OPTS: "--master=spark://spark-master:7077 --driver-memory=1G --executor-memory=1G"
+  #   volumes:
+  #     - ./:/home/jovyan/work
+  #     # - ./jars:/home/jovyan/jars
+  #   command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''
+  #   networks:
+  #     - stock_pipeline_network
 
   # Airflow PostgreSQL DB 초기화
   airflow-init:
@@ -330,3 +383,4 @@ volumes:
   kafka_data:
   postgres_data:
   pgadmin_data:
+  grafana-data: 

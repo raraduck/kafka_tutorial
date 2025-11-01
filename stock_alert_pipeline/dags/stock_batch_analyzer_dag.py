@@ -8,6 +8,7 @@
 
 from datetime import datetime, timedelta
 from airflow import DAG
+from airflow.models import DagRun
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 import os
@@ -149,6 +150,10 @@ with DAG(
     schedule_interval='0 18 * * 1-5',  # 주중 오후 6시 실행
     catchup=False,
     tags=['stock', 'analysis', 'batch'],
+    params={
+        "ds1": "{{ ds }}",  # 기본값: 실행 날짜
+        "ds2": "{{ ds }}",  # 기본값: 실행 날짜
+    }
 ) as dag:
     
     # 출력 디렉토리 생성
@@ -157,6 +162,28 @@ with DAG(
         bash_command=f'mkdir -p {OUTPUT_PATH}',
     )
     
+    # 출력 디렉토리 생성
+    collect_historical_data = BashOperator(
+        task_id='collect_historical_data',
+        bash_command=(
+            "python /opt/airflow/data_collectors/backfill_collector.py "
+            # "--start-date {{ ds1 }} "
+            # "--end-date {{ ds2 }} "
+            "--start-date {{ params.ds1 or dag_run.conf.get('ds1') }} "
+            "--end-date {{ params.ds2 or dag_run.conf.get('ds2') }} "
+            "--tickers {{ params.tickers }} "
+            "--kafka-topic stock-prices-topic "
+            "--interval 1d "
+            "--bootstrap-servers kafka:29092"
+        ),
+        # params={'tickers': ','.join(STOCK_TICKERS)},
+        params={
+            'tickers': ','.join(STOCK_TICKERS),
+            'ds1': None,   # 기본값 (없을 때는 dag_run.conf로 대체)
+            'ds2': None
+        }
+    )
+
     # Spark 작업 제출 (BashOperator로 실행)
     analyze_stocks = BashOperator(
         task_id='analyze_stocks',
@@ -165,12 +192,19 @@ with DAG(
             "/opt/bitnami/spark/bin/spark-submit "
             "--master spark://spark-master:7077 "
             "--name StockBatchAnalyzer "
-            "--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1,org.apache.kafka:kafka-clients:2.6.0 "
+            "--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.1,org.apache.kafka:kafka-clients:2.6.0 "
             "/opt/bitnami/spark/work/spark/batch/stock_batch_analyzer.py "
             "--output_path /opt/airflow/data/output/stock_analysis_{{ ds }}.json "
-            "--start_date {{ ds }} --end_date {{ ds }} --tickers {{ params.tickers }}"
+            "--start_date {{ params.ds1 or dag_run.conf.get('ds1') }} "
+            "--end_date {{ params.ds2 or dag_run.conf.get('ds2') }} "
+            "--tickers {{ params.tickers }} "
+            "--kafka_topic stock-prices-topic"
         ),
-        params={'tickers': ','.join(STOCK_TICKERS)},
+        params={
+            'tickers': ','.join(STOCK_TICKERS),
+            'ds1': None,   # 기본값 (없을 때는 dag_run.conf로 대체)
+            'ds2': None
+        }
     )
     
     # 결과 처리
@@ -188,4 +222,4 @@ with DAG(
     )
     
     # 작업 의존성 설정
-    create_output_dir >> analyze_stocks >> process_results >> send_report
+    create_output_dir >> collect_historical_data >> analyze_stocks >> process_results >> send_report
